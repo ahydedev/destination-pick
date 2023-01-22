@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    z-index: 9999;
+}
+
+.loading-image-container{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes slide {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+#loading-image {
+    animation-name: slide;   
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h2, button {
+    padding: 0.75rem;
+    font-size: medium;
+}
+
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    margin-bottom: 3rem;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 109px;
+    max-height: 500px;
+    max-width: 1425px;
+}
+
+.btn-container {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    background-color: rgb(14, 14, 186);
+}
+
+#welcome-content-container {
+    padding: 0.5rem 0 0.5rem 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.info {
+    max-width: 1000px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info h2 {
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    /* margin-top: 5rem; */
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e3bd14;
+    cursor: pointer;
+}
+
+#more-info {
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: black;
+    padding: 0.75rem;
+}
+
+footer p {
+    font-size: small;
+    color: white;
+}
+
+.section-container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1200px;
+    margin-top: 109px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-check {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+}
+
+.form-check .form-check-input {
+    float: none;
+}
+
+.form-check-input:hover, .form-check-label:hover {
+    cursor: pointer;
+}
+
+.text-input {
+    width: 500px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result-container {
+    margin-top: 150px;
+}
+
+.flag {
+    max-width: 400px;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sad-face {
+    max-width: 100px;
+    width: 40%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.apology-text {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Media queries */
+
+
+@media (min-width: 501px) {
+    .sm-viewport {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container-fluid {
+        max-height: 700px;
+    }
+}
+
+@media (min-width: 1350px) {
+    .container-fluid {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1425px) {
+    .container-fluid {
+        margin-top: 25px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-fluid {
+        max-height: 600px;
+        margin-top: 0;
+    }
+    .lg-viewport {
+        display: none;
+    }
+    .sm-viewport {
+        display: visible;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        visibility: hidden;
+    }
+    .form-check {
+        padding: 0;
+        margin: 0;
+    }
+    .form-check-input {
+        visibility: hidden;
+    }
+    .form-check-label {
+        background-color: rgb(14, 14, 186);
+        color: white;
+        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        margin: 0.5rem;
+    }
+    .form-check-label:hover {
+        cursor: pointer;
+    }
+    :checked + label {
+        font-weight: bold;
+        background-color: #e3bd14;
+    }
+}
+
+
+
+
+
+
+
